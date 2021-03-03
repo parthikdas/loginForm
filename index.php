@@ -14,15 +14,21 @@ session_start();
 	<title>My website</title>
 	<style>
 		@import url("https://fonts.google.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
-		*{
-    		margin: 0;
-    		padding: 0;
-    		box-sizing: border-box;
-    		font-family: 'Poppins',sans-serif;
-		}
-		html{
-			font-size:62.5%;
-		}
+        *,
+        *::before,
+        *::after{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins',sans-serif;
+        }
+        html{
+            font-size: 62.5%; /* so that the 1rem unit will be 10px, normally it is 16px*/
+        }
+        body,html{
+            overflow-x: hidden;
+            overflow-y: hidden;
+        }
 		body{
 			min-height: 100vh;
 			display: flex;
@@ -33,7 +39,7 @@ session_start();
 		}
 		nav{
 			width: 100%;
-			height: 5rem;
+			height: 5.5rem;
 			position: sticky;
 			display: flex;
 			top: 0;
@@ -49,7 +55,7 @@ session_start();
 			align-items: center;
 			border: none;
 			outline: none;
-			padding: 10px;
+			padding: 1rem;
 			position: absolute;
 			right: 1rem;
 			background-color: transparent;
@@ -60,17 +66,17 @@ session_start();
 		}
 		a{
 			float: right;
-			font-size: 2rem;
+			font-size: 2.5rem;
 			text-decoration: none;
 			color: #eee;
 		}
 		h1{
 			margin-left: 1rem;
 			letter-spacing: 0.1rem;
-			font-size: 3rem;
+			font-size: 3.5rem;
 		}
 		section{ /* I haven't gave the height as after many records height will increase automatically */
-			width: 90%;
+			width: 90vw;
 			background-color: rgba(255,255,255,0.3);
 			margin-top: 2rem;
 			border-radius: 1rem;
@@ -85,8 +91,8 @@ session_start();
 		}
 		.record{
 			color: #eee;
-			font-size: 3rem;
-			padding: 3rem;
+			font-size: 2rem;
+			padding: 2.5rem;
 			text-align: justify;
 		}
 	</style>

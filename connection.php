@@ -1,9 +1,9 @@
 <?php
 
-$dbhost = "localhost";// if you are using a web server you need to check what the server is
-$dbuser = "root"; //as i am the only one using
-$dbpass = ""; //it is empty here as it is local host
-$dbname = "login_sample_db"; //the name of the database 
+$dbhost = "sql311.epizy.com";// if you are using a web server you need to check what the server is
+$dbuser = "epiz_28066038"; //as i am the only one using
+$dbpass = "6MFrmUbjAOa"; //it is empty here as it is local host
+$dbname = "epiz_28066038_login_sample_db"; //the name of the database 
 
 if(!$con = mysqli_connect($dbhost,$dbuser,$dbpass,$dbname))
 {
